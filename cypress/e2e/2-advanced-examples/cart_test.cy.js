@@ -1,5 +1,8 @@
 describe("Add to Cart Test", function () {
 
+    beforeEach("", function () {
+          cy.loginWithValidInputs()
+    })
 
     it("Verify Product Details on the Products page", function () {
       cy.productDetails()
@@ -29,7 +32,8 @@ describe("Add to Cart Test", function () {
         cy.continueShopping()
       })
 
-    it("Verify checkout button navigates user to the Checkout page", function () {
+    it.only("Verify checkout button navigates user to the Checkout page", function () {
         cy.checkout()
       })
+      
 })

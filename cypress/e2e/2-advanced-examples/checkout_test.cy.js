@@ -1,5 +1,9 @@
 describe("Checkout Test", function () {
 
+  beforeEach("", function () {
+          cy.loginWithValidInputs()
+    })
+
     it("Verify user can checkout successfully", function () {
       cy.successfulCheckout()
     })
@@ -25,6 +29,6 @@ describe("Checkout Test", function () {
       })
 
     it("Verify user cannot checkout by leaving all fields blank", function () {
-        cy.emptyFields()
+        cy.emptyCheckoutFields()
       })
 })

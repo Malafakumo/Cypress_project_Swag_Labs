@@ -6,7 +6,11 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
-    baseUrl: 'https://www.saucedemo.com/'
+    baseUrl: 'https://www.saucedemo.com/',
+    pageLoadTimeout: 60000,
+    defaultCommandTimeout: 10000,
+    viewportWidth: 1280,
+    viewportHeight: 720
 
   },
 });

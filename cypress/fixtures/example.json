@@ -2,31 +2,37 @@
   "username": "[data-test='username']",
   "password": "[data-test='password']",
   "loginButton": "[data-test='login-button']",
-  "ErrorMessage": "[data-test='error']",
-  "title": "[data-test='title']",
-  "productName": "[data-test='item-0-title-link'] > [data-test='inventory-item-name']",
-  "productDesc": ":nth-child(2) > [data-test='inventory-item-description'] > .inventory_item_label > [data-test='inventory-item-desc']",
-  "productPrice":  ":nth-child(2) > [data-test='inventory-item-description'] > .pricebar > [data-test='inventory-item-price']",
-  "addToCart": "[data-test='add-to-cart-sauce-labs-bike-light']",
-  "removeFromCart": "[data-test='remove-sauce-labs-bike-light']",
-  "cart": "[data-test='shopping-cart-link']",
-  "cartProductName": "[data-test='inventory-item-name']",
-  "cartProductDesc": "[data-test='inventory-item-desc']",
-  "cartProductPrice": "[data-test='inventory-item-price']",
-  "cartRemoveProduct": "[data-test='remove-sauce-labs-bike-light']",
-  "continueShoppingbutton": "[data-test='continue-shopping']",
-  "checkoutButton": "[data-test='checkout']",
-  "checkoutPage": "[data-test='title']",
-  "firstName": "[data-test='firstName']",
-  "lastName": "[data-test='lastName']",
-  "zipCode": "[data-test='postalCode']",
-  "continueButton": "[data-test='continue']",
-  "cancelButton": "[data-test='cancel']",
-  "finishButton": "[data-test='finish']",
-  "cancelCheckoutButton": "[data-test='cancel']",
-  "completeCheckout": "[data-test='complete-header']",
-  "paymentInfo": "[data-test='payment-info-value']",
-  "shippingInfo": "[data-test='shipping-info-value']",
-  "totalPrice": "[data-test='total-label']"
-}
+  "errorMessage": "[data-test='error']",
+  "pageTitle": "[data-test='title']",
+  "product": {
+    "name": "[data-test='item-0-title-link'] > [data-test='inventory-item-name']",
+    "desc": ":nth-child(2) > [data-test='inventory-item-description'] > .inventory_item_label > [data-test='inventory-item-desc']",
+    "price": ":nth-child(2) > [data-test='inventory-item-description'] > .pricebar > [data-test='inventory-item-price']"
+  },
 
+  "cart": {
+    "addToCartButtton": "[data-test='add-to-cart-sauce-labs-bike-light']",
+    "removeButton": "[data-test='remove-sauce-labs-bike-light']",
+    "link": "[data-test='shopping-cart-link']",
+    "productName": "[data-test='inventory-item-name']",
+    "productDesc": "[data-test='inventory-item-desc']",
+    "productPrice": "[data-test='inventory-item-price']",
+    "removeProduct": "[data-test='remove-sauce-labs-bike-light']",
+    "continueShoppingButton": "[data-test='continue-shopping']"
+  },
+
+  "checkout": {
+    "button": "[data-test='checkout']",
+    "page": "[data-test='title']",
+    "firstName": "[data-test='firstName']",
+    "lastName": "[data-test='lastName']",
+    "zipCode": "[data-test='postalCode']",
+    "continueButton": "[data-test='continue']",
+    "cancelButton": "[data-test='cancel']",
+    "finishButton": "[data-test='finish']",
+    "completeCheckout": "[data-test='complete-header']",
+    "paymentInfo": "[data-test='payment-info-value']",
+    "shippingInfo": "[data-test='shipping-info-value']",
+    "totalPrice": "[data-test='total-label']"
+  }
+}
